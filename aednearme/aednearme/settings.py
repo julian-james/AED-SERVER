@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import dj_database_url
 from pathlib import Path
 import os
+import django_heroku
 # import cloudinary
 # import cloudinary.uploader
 # import cloudinary.api
@@ -39,7 +40,7 @@ SECRET_KEY = 'django-insecure-513j$mi!j98d2lkg!1rkejgwpr-x3)z_^y#2w@p(%0!7+kc)$8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'aednearme-backend.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

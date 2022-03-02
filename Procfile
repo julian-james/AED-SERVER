@@ -1,1 +1,1 @@
-echo "web: gunicorn aednearme.wsgi"
+web: gunicorn aednearme.wsgi --log-file -
