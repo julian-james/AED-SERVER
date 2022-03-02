@@ -45,7 +45,7 @@ DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 DJANGO_DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', 'https://aednearme-backend.herokuapp.com']
 
 
 # Application definition
@@ -188,7 +188,7 @@ REST_FRAMEWORK = {
     )
 }
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # STATICFILES_DIRS = (
