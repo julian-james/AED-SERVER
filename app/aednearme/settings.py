@@ -110,16 +110,29 @@ WSGI_APPLICATION = 'aednearme.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'AED_DB', # The Server name from 1.5
+#         'USER': 'postgres', # The username from 1.6
+#         'PASSWORD': 'gotMints365', # The password from installation
+#         'HOST': 'localhost', # Host name/address from 1.6,
+#         'PORT': '5432' # Port from 1.6
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'AED_DB', # The Server name from 1.5
-        'USER': 'postgres', # The username from 1.6
-        'PASSWORD': 'gotMints365', # The password from installation
-        'HOST': 'localhost', # Host name/address from 1.6,
+        'NAME': 'dabrfsnv61g6bi', # The Server name from 1.5
+        'USER': 'jwddqxuwjysjae', # The username from 1.6
+        'PASSWORD': '6ec3076a4f0b5a920a7e3e2182cb5fa0c015df6cdea32d6fc513f5ff995c67b3', # The password from installation
+        'HOST': 'ec2-54-220-243-77.eu-west-1.compute.amazonaws.com', # Host name/address from 1.6,
         'PORT': '5432' # Port from 1.6
     }
 }
+
+
 
 
 
