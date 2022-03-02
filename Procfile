@@ -1,2 +1,2 @@
 release: python app/manage.py migrate
-web: gunicorn aednearme.wsgi --log-file =-
+web: gunicorn aednearme.wsgi --log-file=-
