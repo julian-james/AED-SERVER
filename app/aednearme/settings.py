@@ -35,10 +35,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-513j$mi!j98d2lkg!1rkejgwpr-x3)z_^y#2w@p(%0!7+kc)$8'
+# SECRET_KEY = 'django-insecure-513j$mi!j98d2lkg!1rkejgwpr-x3)z_^y#2w@p(%0!7+kc)$8'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-513j$mi!j98d2lkg!1rkejgwpr-x3)z_^y#2w@p(%0!7+kc)$8')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+
+# DEBUG = False
+DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+
 DJANGO_DEBUG = False
 
 ALLOWED_HOSTS = ['*']
@@ -117,8 +121,7 @@ DATABASES = {
     }
 }
 
-db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
+
 
 
 # Password validation
@@ -183,3 +186,5 @@ STATICFILES_DIRS = (
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
 
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
