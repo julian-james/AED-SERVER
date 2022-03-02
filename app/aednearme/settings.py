@@ -9,10 +9,10 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-import dj_database_url
 from pathlib import Path
 import os
 import django_heroku
+import dj_database_url
 # import cloudinary
 # import cloudinary.uploader
 # import cloudinary.api
@@ -39,6 +39,7 @@ SECRET_KEY = 'django-insecure-513j$mi!j98d2lkg!1rkejgwpr-x3)z_^y#2w@p(%0!7+kc)$8
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+DJANGO_DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
