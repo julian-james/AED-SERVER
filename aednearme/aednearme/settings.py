@@ -45,7 +45,7 @@ DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 DJANGO_DEBUG = False
 
-ALLOWED_HOSTS = ['aednearme-backend.herokuapp.com']
+ALLOWED_HOSTS = ['localhost:8000', 'aednearme-backend.herokuapp.com']
 
 
 # Application definition
