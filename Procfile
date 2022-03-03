@@ -1,1 +1,1 @@
-web: gunicorn app.aednearme.wsgi --log-file -
+web: gunicorn aednearme.wsgi --log-file -
